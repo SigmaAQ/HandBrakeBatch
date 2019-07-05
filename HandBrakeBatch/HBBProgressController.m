@@ -345,7 +345,7 @@ static NSMutableString *stdErrorString;
 		return;
 	}
 
-	self.handBrakeCLI = [[NSBundle mainBundle] pathForResource:@"HandBrakeCLI" ofType:@""];
+	self.handBrakeCLI = [[NSBundle mainBundle] pathForResource:@"HandBrakeCLI1.2" ofType:@""];
 
 	////////////////////////////////////////////////////////////////////////////////////////////////
 	// Initialization of common parameters
@@ -365,7 +365,13 @@ static NSMutableString *stdErrorString;
 	self.arguments = [[NSMutableArray alloc] init];
 
 	BOOL ignoreFollowing = NO;
-
+    [self.arguments addObject:@"--quality"];
+    [self.arguments addObject:@"25"];
+    [self.arguments addObject:@"--ab"];
+    [self.arguments addObject:@"105"];
+    //[self.arguments addObject:@"--preset"];
+    //[self.arguments addObject:[self.preset substringFromIndex:@"--preset".length+1]];
+    /*
 	for (NSString *currentArg in [self.preset componentsSeparatedByCharactersInSet :[NSCharacterSet whitespaceCharacterSet]]) {
 
 		// We filter out the -a x,y,z argument: added later depending on the audio language preferences
@@ -384,7 +390,7 @@ static NSMutableString *stdErrorString;
 			ignoreFollowing = NO;
 		}
 	}
-
+*/
 	self.outputFolder = [[NSUserDefaults standardUserDefaults] objectForKey:@"OutputFolder"];
 
 	// Check whether the output folder exists
