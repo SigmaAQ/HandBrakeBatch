@@ -1108,26 +1108,23 @@
 	<key>CFBundlePackageType</key>
 	<string>APPL</string>
 	<key>CFBundleShortVersionString</key>
-	<string>2.25</string>
+	<string>2.26</string>
 	<key>CFBundleSignature</key>
 	<string>????</string>
 	<key>CFBundleVersion</key>
-	<string>2.25</string>
+	<string>2.26</string>
 	<key>HandBrakePresets</key>
 	<array>
+		<string>Android 720p30</string>
+		<string>customize</string>
+		<string>Android Tablet</string>
 		<string>Universal</string>
-		<string>iPod</string>
-		<string>iPhone &amp; iPod Touch</string>
-		<string>iPhone4</string>
 		<string>iPad</string>
 		<string>AppleTV</string>
 		<string>AppleTV 2</string>
 		<string>Normal</string>
 		<string>High Profile</string>
 		<string>Classic</string>
-		<string>AppleTV Legacy</string>
-		<string>iPhone Legacy</string>
-		<string>iPod Legacy</string>
 	</array>
 	<key>LSApplicationCategoryType</key>
 	<string>public.app-category.video</string>

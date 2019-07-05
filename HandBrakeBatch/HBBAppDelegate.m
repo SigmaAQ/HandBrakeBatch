@@ -52,8 +52,9 @@
 
 	// Load queue
 	if ([[NSFileManager defaultManager] fileExistsAtPath:[[[self class] appSupportFolder] stringByAppendingPathComponent:@"SavedQueue.data"]]) {
+        self.inputFiles = [[NSMutableArray alloc] init];
 		NSLog(@"Loading queue…");
-		self.inputFiles = [NSKeyedUnarchiver unarchiveObjectWithFile:[[[self class] appSupportFolder] stringByAppendingPathComponent:@"SavedQueue.data"]];
+		//self.inputFiles = [NSKeyedUnarchiver unarchiveObjectWithFile:[[[self class] appSupportFolder] stringByAppendingPathComponent:@"SavedQueue.data"]];
 	} else {
 		self.inputFiles = [[NSMutableArray alloc] init];
 	}
@@ -85,7 +86,7 @@
 	[self.presetPopUp selectItemWithTitle:selectedPreset];
 
 	// Donation Nag window (every 2 days)
-	if ( ![[NSUserDefaults standardUserDefaults] boolForKey:@"HBBNoDonation"] ) {
+	if ( [[NSUserDefaults standardUserDefaults] boolForKey:@"HBBNoDonation"] ) {
 		NSDate *firstLaunchDate = [[NSUserDefaults standardUserDefaults] objectForKey:@"HBBFirstLaunchDate"];
 		NSTimeInterval interval = [[NSDate date] timeIntervalSinceDate:firstLaunchDate];
 
@@ -110,7 +111,7 @@
 	}
 
 	// Add observer for arrangedObjects
-	[self.fileNamesController addObserver:self forKeyPath:@"arrangedObjects" options:NSKeyValueObservingOptionNew context:nil];
+	//[self.fileNamesController addObserver:self forKeyPath:@"arrangedObjects" options:NSKeyValueObservingOptionNew context:nil];
 }
 
 - (void)windowWillClose:(NSNotification *)notification {
