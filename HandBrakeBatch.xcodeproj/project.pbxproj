@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0DA1BC4322CE1C51001A52C9 /* HandBrakeCLI1.2 in Resources */ = {isa = PBXBuildFile; fileRef = 0DA1BC4222CE1C51001A52C9 /* HandBrakeCLI1.2 */; };
 		0E108B6B136C47F200168057 /* HBBProgressController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E108B6A136C47F200168057 /* HBBProgressController.m */; };
 		0E18546B136C4222004B5558 /* HBBProgressWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0E18546A136C4222004B5558 /* HBBProgressWindow.xib */; };
 		0E337A4715144FCC006150DD /* RSRTVArrayController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E337A4615144FCC006150DD /* RSRTVArrayController.m */; };
@@ -61,6 +62,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		0DA1BC4222CE1C51001A52C9 /* HandBrakeCLI1.2 */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = HandBrakeCLI1.2; sourceTree = "<group>"; };
 		0E108B69136C47F200168057 /* HBBProgressController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HBBProgressController.h; sourceTree = "<group>"; };
 		0E108B6A136C47F200168057 /* HBBProgressController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = HBBProgressController.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
 		0E18546A136C4222004B5558 /* HBBProgressWindow.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HBBProgressWindow.xib; sourceTree = "<group>"; };
@@ -225,6 +227,7 @@
 				0EF8EF93136CFEB700884AE8 /* Credits.rtf */,
 				0EF72314136CFCE100D223F4 /* gpl-3.0.txt */,
 				0EEC80471369B4EA00D05124 /* HandBrakeBatch-Info.plist */,
+				0DA1BC4222CE1C51001A52C9 /* HandBrakeCLI1.2 */,
 				0E42F49B1A7DF0AA00AF4589 /* HandBrakeCLI */,
 				0EEC80481369B4EA00D05124 /* InfoPlist.strings */,
 				0EEC804B1369B4EA00D05124 /* HandBrakeBatch-Prefix.pch */,
@@ -261,11 +264,11 @@
 		0EEC80321369B4EA00D05124 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0600;
+				LastUpgradeCheck = 1010;
 				ORGANIZATIONNAME = "";
 				TargetAttributes = {
 					0EEC803A1369B4EA00D05124 = {
-						DevelopmentTeam = WEY78UNE2S;
+						DevelopmentTeam = Y497B2733U;
 					};
 				};
 			};
@@ -295,6 +298,7 @@
 				0EEC80561369B4EA00D05124 /* MainMenu.xib in Resources */,
 				0E18546B136C4222004B5558 /* HBBProgressWindow.xib in Resources */,
 				0EF72315136CFCE100D223F4 /* gpl-3.0.txt in Resources */,
+				0DA1BC4322CE1C51001A52C9 /* HandBrakeCLI1.2 in Resources */,
 				4CEDF63319BD4A4C0020FCAF /* Icon.icns in Resources */,
 				0EF8EF95136CFEB700884AE8 /* Credits.rtf in Resources */,
 				0E49A762137642B700FB3B77 /* plist.rb in Resources */,
@@ -428,6 +432,7 @@
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = NO;
+				DEVELOPMENT_TEAM = Y497B2733U;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)\"",
@@ -454,6 +459,7 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = Y497B2733U;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)\"",
